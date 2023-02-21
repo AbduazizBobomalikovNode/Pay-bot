@@ -20,6 +20,15 @@ bot.use(stage.middleware());
 let kanal = -1001866625187;
 
 bot.start(ctx => {
+    let text = ctx.message.text.replace("/start","").trim()
+    if(text == "pay"){
+        ctx.replyWithPhoto({ source: fs.createReadStream("./images/world.jpg") }, {
+            caption: "sharotnoma",
+            parse_mode: "HTML",
+            ...button
+        })
+    }
+    console.log(text)
     let soname = "";
     if (ctx.message.chat.last_name != undefined) {
         soname = ctx.message.chat.last_name;
