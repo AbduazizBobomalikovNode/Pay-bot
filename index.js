@@ -20,6 +20,7 @@ bot.use(stage.middleware());
 let kanal = -1001866625187;
 
 bot.start(ctx => {
+	///hello world
     let text = ctx.message.text.replace("/start","").trim()
     if(text == "pay"){
         ctx.replyWithPhoto({ source: fs.createReadStream("./images/world.jpg") }, {
