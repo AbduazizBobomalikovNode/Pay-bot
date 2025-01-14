@@ -2,7 +2,7 @@ const { Telegraf, Markup, session, Scenes } = require('telegraf');
 const fs = require("fs");
 const scenesPayme = require('./room/payme');
 const scenesClick = require('./room/click');
-const { menu, button } = require("./keyboard/meny");
+const { menu, button } = require("./keyboard/menu");
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 const stage = new Scenes.Stage([scenesPayme, scenesClick]);
