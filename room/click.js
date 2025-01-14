@@ -8,7 +8,7 @@ const getInvoice = (id, narx) => {
     const invoice = {
         chat_id: id,
         provider_token: process.env.TOKEN_CLICK,
-        start_parameter: `world-uz-payme-${id}`,
+        start_parameter: `world-uz-click-${id}`,
         title: 'invois  uchun sarlavha', // Product name, 1-32 characters
         description: 'Eslatma! namuna.uz kompanyasiga clickdan tolov.', // Product description, 1-255 characters
         currency: 'UZS', // ISO 4217 Three-Letter Currency Code
