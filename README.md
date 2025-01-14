@@ -42,11 +42,31 @@ Quyidagi qadamlarni bajarib loyihani o'z kompyuteringizda ishga tushiring:
    ```bash
    npm start
    ```
+
 ## 🔐 Muhit o'zgaruvchilari
-   BOT_TOKEN - sizning  telegram bot  tokeningiz
-   DATABASE_URL - sizning  MongoDb   cloud dagi tokeningiz
-   TOKEN_CLICK - CLICK.uz  tizimidagi (kassa) tokeningiz
-   TOKEN_PAYME - PAYME.uz  tizimidagi (kassa) tokeningiz
+  - BOT_TOKEN - sizning  telegram bot  tokeningiz
+  - DATABASE_URL - sizning  MongoDb   cloud dagi tokeningiz
+  - TOKEN_CLICK - CLICK.uz  tizimidagi (kassa) tokeningiz
+  - TOKEN_PAYME - PAYME.uz  tizimidagi (kassa) tokeningiz
+  - INFO_ADMIN_CHANNEL - to'lovlar haqida adminga  bildirish uchun kanal  ID yoki USERNAME si 
+   
+## ⚙ Muhit o'zgaruvchilari Muhitga taminlash
+1. Windows muhiti uchun:
+   ```bash
+set BOT_TOKEN=sizning_telegram_bot_tokeningiz
+set DATABASE_URL=sizning_MongoDb_cloud_dagi_tokeningiz
+set TOKEN_CLICK=CLICK.uz_tizimidagi_(kassa)_tokeningiz
+set TOKEN_PAYME=PAYME.uz_tizimidagi_(kassa)_tokeningiz
+set INFO_ADMIN_CHANNEL=to'lovlar_haqida_adminga_bildirish_uchun_kanal_ID_yoki_USERNAME_si 
+   ```
+2. Linux muhiti uchun:
+   ```bash
+export BOT_TOKEN="sizning_telegram_bot_tokeningiz"
+export DATABASE_URL="sizning_MongoDb_cloud_dagi_tokeningiz"
+export TOKEN_CLICK="CLICK.uz_tizimidagi_(kassa)_tokeningiz"
+export TOKEN_PAYME="PAYME.uz_tizimidagi_(kassa)_tokeningiz"
+export INFO_ADMIN_CHANNEL="to'lovlar_haqida_adminga_bildirish_uchun_kanal_ID_yoki_USERNAME_si" 
+   ```
    
 ## 📜 Foydalanish
 
