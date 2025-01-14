@@ -9,10 +9,10 @@ const getInvoice = (id, narx) => {
         chat_id: id,
         provider_token: process.env.TOKEN_CLICK,
         start_parameter: `world-uz-payme-${id}`,
-        title: 'world.uz', // Product name, 1-32 characters
-        description: 'Eslatma! world.uz kompanyasiga clickdan tolov.', // Product description, 1-255 characters
+        title: 'invois  uchun sarlavha', // Product name, 1-32 characters
+        description: 'Eslatma! namuna.uz kompanyasiga clickdan tolov.', // Product description, 1-255 characters
         currency: 'UZS', // ISO 4217 Three-Letter Currency Code
-        prices: [{ label: 'world.uz  service:', amount: narx * 100 }], // Price breakdown, serialized list of components in JSON format 100 kopecks * 100 = 100 rubles
+        prices: [{ label: 'namuna.uz  service:', amount: narx * 100 }], // Price breakdown, serialized list of components in JSON format 100 kopecks * 100 = 100 rubles
         payload: { // The payload of the invoice, as determined by the bot, 1-128 bytes. This will not be visible to the user, use it for your internal processes.
             unique_id: `${id}_${Number(new Date())}`,
             provider_token: process.env.TOKEN_CLICK
