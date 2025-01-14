@@ -4,7 +4,7 @@
 
 ## 📋 Loyiha haqida
 
-Ushbu loyiha Node.js platformasida ishlab chiqilgan bo'lib, Telegram bot sifatida ishlaydi. Pay-bot turli xil to'lov tizimlari bilan integratsiya qilinishi va real vaqt rejimida foydalanuvchilar bilan ishlashi mumkin.
+Ushbu loyiha Node.js platformasida ishlab chiqilgan bo'lib, Telegram bot sifatida ishlaydi. Pay-bot [PAYME](https://payme.uz/) [CLICK](https://click.uz/) tizimlari bilan integratsiya qilinishi va real vaqt rejimida foydalanuvchilar bilan ishlashi mumkin.
 
 ### Asosiy funksiyalar:
 - 🔐 Foydalanuvchilar autentifikatsiyasi va avtorizatsiyasi.
@@ -18,7 +18,6 @@ Loyiha quyidagi texnologiyalar asosida qurilgan:
 - **Node.js** - asosiy backend platformasi.
 - **Telegram Bot API** - botni yaratish va boshqarish uchun.
 - **MongoDB** - ma'lumotlar bazasi.
-- **dotenv** - maxfiy kalitlarni boshqarish uchun.
 
 ## ⚙ O'rnatish
 
@@ -39,18 +38,16 @@ Quyidagi qadamlarni bajarib loyihani o'z kompyuteringizda ishga tushiring:
    npm install
    ```
 
-4. `.env` faylini yaratib, kerakli sozlamalarni qo'shing:
-   ```plaintext
-   BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
-   DATABASE_URL=YOUR_MONGODB_CONNECTION_URL
-   ```
-   `.env` fayliga boshqa kerakli sozlamalarni qo'shishni unutmang.
-
-5. Loyihani ishga tushiring:
+4. Loyihani ishga tushiring:
    ```bash
    npm start
    ```
-
+## 🔐 Muhit o'zgaruvchilari
+   BOT_TOKEN - sizning  telegram bot  tokeningiz
+   DATABASE_URL - sizning  MongoDb   cloud dagi tokeningiz
+   TOKEN_CLICK - CLICK.uz  tizimidagi (kassa) tokeningiz
+   TOKEN_PAYME - PAYME.uz  tizimidagi (kassa) tokeningiz
+   
 ## 📜 Foydalanish
 
 - Telegram botingizga `/start` komandasi orqali kirib, foydalanishni boshlashingiz mumkin.
@@ -69,7 +66,7 @@ Hissa qo'shish uchun quyidagi qadamlarni bajaring:
 
 Loyiha haqida savollaringiz bo'lsa, quyidagi manzilga murojaat qiling:
 - **Muallif:** [Abduaziz Bobomalikov](https://github.com/AbduazizBobomalikovNode)
-- **Telegram:** [@AbduazizBobomalikov](https://t.me/AbduazizBobomalikov)
+- **Telegram:** [@AbduazizBobomalikov](https://t.me/@Bobomalikov_Abduaziz)
 
 ## 🛡 Litsenziya
 
