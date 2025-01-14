@@ -17,7 +17,7 @@ bot.use(Telegraf.log())
 bot.use(session());
 bot.use(stage.middleware());
 
-let kanal = -1001866625187;
+let kanal = process.env.INFO_ADMIN_CHANNEL;
 
 bot.start(ctx => {
     let text = ctx.message.text.replace("/start","").trim()
@@ -57,7 +57,6 @@ bot.hears("Joylashuvimiz", ctx => {
     )
 })
 bot.on("pre_checkout_query", ctx => {
-    // console.log("To'lov uchun rahmat!:", ctx.update.pre_checkout_query)
     let id = ctx.update.pre_checkout_query.id;
     ctx.telegram.answerPreCheckoutQuery(id, true, "shunarsiz katolik");
 })
@@ -84,7 +83,7 @@ function sendChek(ctx) {
     let UZS = ctx.message.successful_payment.total_amount;
 
     let chek =
-        `<b>World.uz uchun to'lov.</b>\n` +
+        `<b>Namuna.uz uchun to'lov.</b>\n` +
         `To'lov Id(payme):<i>${payID}</i>\n` +
         `To'lov Id(talegram):<i>${telegramPayId}</i>\n` +
         `To'lov summa : <i>${parseInt(UZS / 100)}.${reg(UZS % 100)}</i> so'm\n`+
@@ -94,7 +93,7 @@ function sendChek(ctx) {
         `Telegram username: @${username}\n` +
         `To'lov sanasi: ${sana}\n` +
         `To'lov vaqti: ${vaqt}\n` +
-        `WorlduzBot yuborilgan chek.`
+        `Namuna.uz chek hisob.`
     return chek;
 }
 bot.on("successful_payment", ctx => {
