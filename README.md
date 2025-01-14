@@ -53,19 +53,19 @@ Quyidagi qadamlarni bajarib loyihani o'z kompyuteringizda ishga tushiring:
 ## ⚙ Muhit o'zgaruvchilari Muhitga taminlash
 1. Windows muhiti uchun:
    ```bash
-set BOT_TOKEN=sizning_telegram_bot_tokeningiz
-set DATABASE_URL=sizning_MongoDb_cloud_dagi_tokeningiz
-set TOKEN_CLICK=CLICK.uz_tizimidagi_(kassa)_tokeningiz
-set TOKEN_PAYME=PAYME.uz_tizimidagi_(kassa)_tokeningiz
-set INFO_ADMIN_CHANNEL=to'lovlar_haqida_adminga_bildirish_uchun_kanal_ID_yoki_USERNAME_si 
+   set BOT_TOKEN=sizning_telegram_bot_tokeningiz
+   set DATABASE_URL=sizning_MongoDb_cloud_dagi_tokeningiz
+   set TOKEN_CLICK=CLICK.uz_tizimidagi_(kassa)_tokeningiz
+   set TOKEN_PAYME=PAYME.uz_tizimidagi_(kassa)_tokeningiz
+   set INFO_ADMIN_CHANNEL=to'lovlar_haqida_adminga_bildirish_uchun_kanal_ID_yoki_USERNAME_si 
    ```
 2. Linux muhiti uchun:
    ```bash
-export BOT_TOKEN="sizning_telegram_bot_tokeningiz"
-export DATABASE_URL="sizning_MongoDb_cloud_dagi_tokeningiz"
-export TOKEN_CLICK="CLICK.uz_tizimidagi_(kassa)_tokeningiz"
-export TOKEN_PAYME="PAYME.uz_tizimidagi_(kassa)_tokeningiz"
-export INFO_ADMIN_CHANNEL="to'lovlar_haqida_adminga_bildirish_uchun_kanal_ID_yoki_USERNAME_si" 
+   export BOT_TOKEN="sizning_telegram_bot_tokeningiz"
+   export DATABASE_URL="sizning_MongoDb_cloud_dagi_tokeningiz"
+   export TOKEN_CLICK="CLICK.uz_tizimidagi_(kassa)_tokeningiz"
+   export TOKEN_PAYME="PAYME.uz_tizimidagi_(kassa)_tokeningiz"
+   export INFO_ADMIN_CHANNEL="to'lovlar_haqida_adminga_bildirish_uchun_kanal_ID_yoki_USERNAME_si" 
    ```
    
 ## 📜 Foydalanish
