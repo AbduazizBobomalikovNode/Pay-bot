@@ -1,2 +1,2 @@
-# worldbot
+# Pay bot
 to'lov bot 
