@@ -1,4 +1,4 @@
-# Pay-bot
+# Pay-bot for payme.uz and  click.uz
 
 **Pay-bot** - bu to'lovlarni avtomatlashtirish va boshqarish uchun yaratilgan bot. Ushbu loyiha foydalanuvchilarga qulay interfeys orqali to'lov jarayonlarini soddalashtirishga yordam beradi.
 
