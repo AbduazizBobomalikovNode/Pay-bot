@@ -86,7 +86,7 @@ Hissa qo'shish uchun quyidagi qadamlarni bajaring:
 
 Loyiha haqida savollaringiz bo'lsa, quyidagi manzilga murojaat qiling:
 - **Muallif:** [Abduaziz Bobomalikov](https://github.com/AbduazizBobomalikovNode)
-- **Telegram:** [@AbduazizBobomalikov](https://t.me/@Bobomalikov_Abduaziz)
+- **Telegram:** [Abduaziz Bobomalikov](https://t.me/Bobomalikov_Abduaziz)
 
 ## 🛡 Litsenziya
 
