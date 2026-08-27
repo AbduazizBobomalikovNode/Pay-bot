@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { Telegraf, Markup, session, Scenes } = require('telegraf');
 const fs = require("fs");
 const scenesPayme = require('./room/payme');
