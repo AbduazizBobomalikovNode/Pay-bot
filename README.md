@@ -6,6 +6,8 @@ Mijoz chatdan chiqmasdan to'laydi, tizim to'lovni o'zi tasdiqlaydi — chek rasm
 
 ---
 
+**Sahifa:** [abduazizbobomalikovnode.github.io/Pay-bot/](https://abduazizbobomalikovnode.github.io/Pay-bot/)
+
 ## Muammo
 
 Kichik biznes Telegram orqali sotadi. Mijoz to'laydi, chek rasmini tashlaydi, sotuvchi uni ochib ko'radi, summani tekshiradi va buyurtmani tasdiqlaydi.
