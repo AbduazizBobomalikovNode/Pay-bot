@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" role="img" aria-labelledby="ttl" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<title id="ttl">Pay-bot qanday ishlaydi: mijoz summani yozadi, Payme invoysini to'laydi, bot tasdiqlaydi va admin kanaliga chek yuboradi</title>
+<style>
+.t{fill:#e6edf3;font-size:14px;font-weight:600}
+.s{fill:#8b949e;font-size:11px}
+.n{fill:#58a6ff;font-size:11px;font-weight:700;letter-spacing:1px}
+.c{fill:#c9d1d9;font-size:10.5px}
+.box{fill:#161b22;stroke:#30363d;stroke-width:1.5}
+.bub{fill:#21262d}
+.wire{stroke:#30363d;stroke-width:2;fill:none;stroke-dasharray:3 6;animation:flow 1s linear infinite}
+.dot{fill:#58a6ff;opacity:0;filter:drop-shadow(0 0 5px #58a6ff)}
+.b1{animation:s4 14s infinite}.b2{animation:s10 14s infinite}.b3{animation:s18 14s infinite}
+.b4{animation:s26 14s infinite}.b5{animation:s34 14s infinite}.ok{animation:s68 14s infinite}.chk{animation:s80 14s infinite}
+.pay{animation:press 14s infinite}
+.g1{animation:g1 14s infinite}.g2{animation:g2 14s infinite}
+@keyframes flow{to{stroke-dashoffset:-9}}
+@keyframes s4{0%,4%{opacity:0;transform:translateY(6px)}6%,97%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+@keyframes s10{0%,10%{opacity:0;transform:translateY(6px)}12%,97%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+@keyframes s18{0%,18%{opacity:0;transform:translateY(6px)}20%,97%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+@keyframes s26{0%,26%{opacity:0;transform:translateY(6px)}28%,97%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+@keyframes s34{0%,34%{opacity:0;transform:translateY(6px)}36%,97%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+@keyframes s68{0%,68%{opacity:0}70%,97%{opacity:1}100%{opacity:0}}
+@keyframes s80{0%,80%{opacity:0;transform:translateY(8px)}83%,97%{opacity:1;transform:translateY(0)}100%{opacity:0}}
+@keyframes press{0%,41%,46%,100%{fill:#238636}43%{fill:#3fb950}}
+@keyframes g1{0%,51%,60%,100%{stroke:#30363d;fill:#161b22}54%,57%{stroke:#58a6ff;fill:#111d2e}}
+@keyframes g2{0%,65%,74%,100%{stroke:#30363d;fill:#161b22}68%,71%{stroke:#3fb950;fill:#12261b}}
+</style>
+
+<rect width="1000" height="440" rx="16" fill="#0d1117"/>
+<text x="30" y="38" class="t" font-size="17">Pay-bot qanday ishlaydi</text>
+
+<!-- wires -->
+<path class="wire" d="M290 305C320 305 315 210 345 210"/>
+<path class="wire" d="M495 210H555"/>
+<path class="wire" d="M705 210H765"/>
+
+<!-- telegram chat -->
+<rect class="box" x="30" y="56" width="260" height="364" rx="22"/>
+<path d="M30 92H290" stroke="#30363d" stroke-width="1.5"/>
+<circle cx="52" cy="74" r="9" fill="#2aabee"/>
+<path d="M47 74l10-4-3 9-2.5-3z" fill="#fff"/>
+<text class="t" x="68" y="79" font-size="12">Pay-bot</text>
+<text class="n" x="204" y="78">1 · SUMMA</text>
+<g class="b1">
+<rect x="200" y="102" width="72" height="24" rx="12" fill="#1f6feb"/>
+<text x="236" y="118" text-anchor="middle" fill="#fff" font-size="11">To'lovlar</text>
+</g>
+<g class="b2">
+<rect class="bub" x="40" y="134" width="150" height="50" rx="10"/>
+<text class="c" x="52" y="150">Shartnoma</text>
+<rect x="48" y="158" width="134" height="20" rx="6" fill="#30363d"/>
+<text x="115" y="172" text-anchor="middle" fill="#e6edf3" font-size="11">payme</text>
+</g>
+<g class="b3">
+<rect class="bub" x="40" y="192" width="172" height="38" rx="10"/>
+<text class="c" x="52" y="207">Payme orqali qancha</text>
+<text class="c" x="52" y="221">to'lov qilmoqchisiz?</text>
+</g>
+<g class="b4">
+<rect x="216" y="238" width="56" height="24" rx="12" fill="#1f6feb"/>
+<text x="244" y="254" text-anchor="middle" fill="#fff" font-size="11">50000</text>
+</g>
+<g class="b5">
+<rect class="bub" x="40" y="270" width="180" height="76" rx="10"/>
+<text class="c" x="52" y="287">Invoys</text>
+<text x="52" y="307" fill="#e6edf3" font-size="15" font-weight="700">50 000 so'm</text>
+<rect class="pay" x="48" y="317" width="164" height="22" rx="6" fill="#238636"/>
+<text x="130" y="332" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">To'lash</text>
+</g>
+<rect x="42" y="382" width="236" height="26" rx="13" fill="#0d1117" stroke="#30363d"/>
+<text class="s" x="56" y="399">Xabar…</text>
+
+<!-- payme -->
+<rect class="box g1" x="345" y="170" width="150" height="80" rx="12"/>
+<text class="n" x="359" y="193">2 · TO'LOV</text>
+<text class="t" x="359" y="214">Payme</text>
+<text class="s" x="359" y="232">Telegram invoysi orqali</text>
+
+<!-- bot -->
+<rect class="box g2" x="555" y="170" width="150" height="80" rx="12"/>
+<text class="n" x="569" y="193">3 · TASDIQ</text>
+<text class="t" x="569" y="214">Bot · Telegraf</text>
+<text class="s" x="569" y="232">o'zi tasdiqlaydi</text>
+<g class="ok"><circle cx="684" cy="190" r="9" fill="#3fb950"/><path d="M679.5 190l3.2 3.2 5.8-6.4" fill="none" stroke="#0d1117" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+
+<!-- admin channel -->
+<rect class="box" x="765" y="76" width="205" height="264" rx="12"/>
+<path d="M765 104H970" stroke="#30363d" stroke-width="1.5"/>
+<text class="t" x="779" y="95" font-size="12">Admin kanali</text>
+<text class="n" x="905" y="95">4 · CHEK</text>
+<g class="chk">
+<rect class="bub" x="777" y="116" width="181" height="130" rx="10"/>
+<text x="789" y="136" fill="#e6edf3" font-size="11" font-weight="700">Namuna.uz uchun to'lov</text>
+<text class="c" x="789" y="156">To'lov Id: …</text>
+<text class="c" x="789" y="174">Summa: 50000.00 so'm</text>
+<text class="c" x="789" y="192">To'lovchi: ism · telefon</text>
+<text class="c" x="789" y="210">Telegram: @username</text>
+<text class="c" x="789" y="228">Sana · vaqt</text>
+</g>
+
+<text x="345" y="400" fill="#3fb950" font-size="11" font-weight="700" letter-spacing="1">CHEK RASMI KERAK EMAS · tasdiq avtomatik</text>
+
+<!-- moving packets -->
+<circle r="5" class="dot"><animateMotion dur="14s" repeatCount="indefinite" calcMode="linear" path="M290 305C320 305 315 210 345 210" keyPoints="0;0;1;1" keyTimes="0;.44;.52;1"/><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;.44;.45;.51;.52;1"/></circle>
+<circle r="5" class="dot"><animateMotion dur="14s" repeatCount="indefinite" calcMode="linear" path="M495 210H555" keyPoints="0;0;1;1" keyTimes="0;.58;.66;1"/><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;.58;.59;.65;.66;1"/></circle>
+<circle r="5" class="dot"><animateMotion dur="14s" repeatCount="indefinite" calcMode="linear" path="M705 210H765" keyPoints="0;0;1;1" keyTimes="0;.72;.80;1"/><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;.72;.73;.79;.80;1"/></circle>
+</svg>
