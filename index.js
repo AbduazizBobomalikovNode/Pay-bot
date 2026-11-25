@@ -3,7 +3,7 @@ const { Telegraf, Markup, session, Scenes } = require('telegraf');
 const fs = require("fs");
 const scenesPayme = require('./room/payme');
 const scenesClick = require('./room/click');
-const { menu, button } = require("./keyboard/menu");
+const { menu, button } = require("./keyboard/meny");
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 const stage = new Scenes.Stage([scenesPayme, scenesClick]);
@@ -100,7 +100,7 @@ function sendChek(ctx) {
 bot.on("successful_payment", ctx => {
     try{
         let chek = sendChek(ctx);
-        ctx.telegram.sendMessage( -1001827600764,chek,{parse_mode:'HTML'});
+        ctx.telegram.sendMessage(kanal, chek,{parse_mode:'HTML'});
         // console.log("to'landi", ctx.message);
     }catch(error){
         console.log("kanalga chek jo'natishda xtolik:",error);
