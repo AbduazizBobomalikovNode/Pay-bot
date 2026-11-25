@@ -18,21 +18,25 @@ Bank kabinetiga kirib solishtirish alohida ish, va u ham qo'lda qilinadi.
 
 ## Nima qiladi
 
-- **To'lovni qabul qiladi** — [Payme](https://payme.uz) va [Click](https://click.uz) orqali
-- **O'zi tasdiqlaydi** — to'lov o'tgani tizimga xabar qilinadi, chek rasmi kerak emas
-- **Foydalanuvchilarni ajratadi** — oddiy foydalanuvchi va admin huquqlari alohida
-- **Hisobot beradi** — to'lovlar va statistika bot ichida
-- **Kanalga xabar yuboradi** — har to'lov haqida admin kanaliga
+- **To'lovni chat ichida qabul qiladi** — mijoz summani yozadi, bot [Payme](https://payme.uz) invoysini chiqaradi (Telegram to'lovlari orqali)
+- **O'zi tasdiqlaydi** — to'lov o'tgach Telegram botga xabar beradi, chek rasmi kerak emas
+- **Kanalga chek yuboradi** — to'lov ID, summa, to'lovchi ismi va telefoni, sana va vaqt admin kanaliga tushadi
+- **Joylashuvni ko'rsatadi** — "Joylashuvimiz" tugmasi manzilni xaritada yuboradi
+
+[Click](https://click.uz) uchun sahna ham yozilgan (`room/click.js`), lekin menyudagi tugmasi hozircha o'chirilgan.
 
 ## Qanday ishlaydi
 
+<p align="center">
+  <img src="images/how-it-works.svg" alt="Pay-bot qanday ishlaydi: mijoz summani yozadi → Payme invoysi → bot tasdiqlaydi → admin kanaliga chek" width="100%">
+</p>
+
 ```
-Mijoz  ──►  xizmatni tanlaydi
-              └─► to'lov havolasi (Payme yoki Click)
-                    └─► to'lov amalga oshadi
-                          ├─► tizim tasdiqlaydi
-                          ├─► bazaga yoziladi
-                          └─► admin kanaliga xabar
+Mijoz  ──►  "To'lovlar" → payme tugmasi
+              └─► summani yozadi (1000 so'mdan ko'p)
+                    └─► bot invoys chiqaradi, mijoz chatda to'laydi
+                          ├─► Telegram to'lovni tasdiqlaydi
+                          └─► admin kanaliga chek boradi
 ```
 
 ## O'rnatish
@@ -60,13 +64,15 @@ Merchant kalitlari to'lov tizimlarining shaxsiy kabinetidan olinadi.
 ## Tuzilma
 
 ```
-index.js      bot va to'lov mantiqi
-room/         suhbat sahnalari
-keyboard/     menyu tugmalari
-images/       rasmlar
-Procfile      serverga joylash uchun
+index.js           bot, menyu va chek yuborish
+room/payme.js      Payme to'lov sahnasi
+room/click.js      Click to'lov sahnasi
+keyboard/meny.js   menyu tugmalari
+images/            rasmlar
+docs/              landing sahifa
+Procfile           serverga joylash uchun
 ```
 
 ## Texnologiyalar
 
-Node.js · Telegraf · Payme API · Click API
+Node.js · Telegraf · Telegram Bot Payments (Payme, Click)
